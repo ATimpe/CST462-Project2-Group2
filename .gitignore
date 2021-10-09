@@ -1,6 +1,40 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/unity,macos,windows
-# Edit at https://www.toptal.com/developers/gitignore?templates=unity,macos,windows
+# Created by https://www.toptal.com/developers/gitignore/api/macos,unity,windows,c++
+# Edit at https://www.toptal.com/developers/gitignore?templates=macos,unity,windows,c++
+
+### C++ ###
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
 
 ### macOS ###
 # General
@@ -129,4 +163,5 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/unity,macos,windows
+# End of https://www.toptal.com/developers/gitignore/api/macos,unity,windows,c++
+.vsconfig
