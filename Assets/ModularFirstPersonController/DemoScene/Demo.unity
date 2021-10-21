@@ -1359,9 +1359,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1231037095}
+      - m_Target: {fileID: 1231037096}
         m_TargetAssemblyTypeName: DealDamage, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: SendDamage
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3697,6 +3697,18 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4459864850019384750, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
   m_PrefabInstance: {fileID: 8765489994903951804}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1231037096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1231037095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1c08159bbb00b49ba71cbf7f794d80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1231037097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4475,8 +4487,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd1c08159bbb00b49ba71cbf7f794d80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hit: 0
-  playerHealth: {fileID: 1716049597}
 --- !u!4 &1716049594
 Transform:
   m_ObjectHideFlags: 0
