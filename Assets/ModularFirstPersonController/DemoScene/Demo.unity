@@ -4424,6 +4424,7 @@ GameObject:
   - component: {fileID: 1716049594}
   - component: {fileID: 1716049593}
   - component: {fileID: 1716049595}
+  - component: {fileID: 1716049597}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -4443,6 +4444,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd1c08159bbb00b49ba71cbf7f794d80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hit: 0
+  playerHealth: {fileID: 1716049597}
 --- !u!4 &1716049594
 Transform:
   m_ObjectHideFlags: 0
@@ -4472,6 +4475,19 @@ MonoBehaviour:
   ammo: 20
   is_firing: 0
   ammo_display: {fileID: 1516538822}
+--- !u!114 &1716049597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1716049592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01aad543884b4fe44a1daa311481a5bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 5
 --- !u!1 &1746328236
 GameObject:
   m_ObjectHideFlags: 0
