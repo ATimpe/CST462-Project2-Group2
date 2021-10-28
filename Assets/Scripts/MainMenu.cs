@@ -7,17 +7,19 @@ public class MainMenu : MonoBehaviour
 {
     public void StartGame()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("level_1");
     }
 
     public void QuitGame()
     {
-        Application.Quit();
+        SceneManager.LoadScene("Credits");
+
+        //Application.Quit();
     }
 
-    public void CreditsMenu()
+    public void Howtoplay()
     {
-        SceneManager.LoadScene("CreditsMenu");
+        SceneManager.LoadScene("Game Instructions");
     }
 
     public void ReturnMenu()
