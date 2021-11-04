@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
 public class ExpBar : MonoBehaviour
 {
@@ -20,6 +21,8 @@ public class ExpBar : MonoBehaviour
         expBar.minValue = min;
         expBar.value = value;
 =======
+=======
+>>>>>>> Stashed changes
 using UnityEngine.UI;
 
 public class ExpBar : MonoBehaviour
@@ -37,13 +40,21 @@ public class ExpBar : MonoBehaviour
         expSlider.maxValue = max;
         expSlider.minValue = min;
         expSlider.value = value;
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     }
 
     public void updateBar(int EXP) {
         value = EXP;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         GetComponent<Slider>().value = value;
+=======
+        Debug.Log("Exp Gained");
+        expSlider.value = value;
+>>>>>>> Stashed changes
 =======
         Debug.Log("Exp Gained");
         expSlider.value = value;
@@ -55,15 +66,21 @@ public class ExpBar : MonoBehaviour
         min = max;
         max = nextLvl;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         expBar.maxValue = max;
         expBar.minValue = min;
         expBar.value = value;
     }
 }
 =======
+=======
+>>>>>>> Stashed changes
         expSlider.maxValue = max;
         expSlider.minValue = min;
         expSlider.value = value;
     }
 }
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
