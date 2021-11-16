@@ -448,8 +448,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Level Design       Michael Gabriel\n                          Kyle Jackson\n\nAssest               
-    Isabel Kasim\n\nGithub               Arthur Timpe"
+  m_Text: "Level Design\t   Michael Gabriel\n\nTrajectory\t  \t   Kyle Jackson\n\nAssest\t\t\t  
+    Isabel Kasim\n\nGithub Guy\t  Arthur Timpe"
 --- !u!222 &796786864
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -553,6 +553,7 @@ GameObject:
   - component: {fileID: 1188665043}
   - component: {fileID: 1188665042}
   - component: {fileID: 1188665041}
+  - component: {fileID: 1188665045}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -641,6 +642,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1188665045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188665040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe5e9367d1cdda245b8b19e5e937c546, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1657326256
 GameObject:
   m_ObjectHideFlags: 0
