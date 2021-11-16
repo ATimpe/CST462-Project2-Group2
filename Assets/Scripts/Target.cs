@@ -5,7 +5,16 @@ using UnityEngine;
 public class Target : MonoBehaviour
 {
     public float health = 50f;
+
+    public GameObject player;
+    public PlayerExp playerExp;
+
     public int numDestroyed;
+
+    private void Start()
+    {
+        playerExp = player.GetComponent<PlayerExp>();
+    }
 
     public void TakeDamage(float amount)
     {
@@ -19,8 +28,8 @@ public class Target : MonoBehaviour
 
     void Die()
     {
+        playerExp.targetsDestroyed++;
         Destroy(gameObject);
     }
-
 
 }
