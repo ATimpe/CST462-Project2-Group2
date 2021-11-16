@@ -10,6 +10,8 @@ public class PlayerExp : MonoBehaviour
     public int expNextLVL;
     public GameObject expBar;
 
+    public int targetsDestroyed = 0;
+
     // Start is called before the first frame update
     void Start()
     {
