@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class ExpBar : MonoBehaviour
 {
     public Slider expSlider;    // The slider for the ExpBar
+    public Text lvlTxt;
     public int value;           // The current exp
     public int min;             // The Exp from the previous level
     public int max;             // The Exp for the next level
@@ -28,10 +29,11 @@ public class ExpBar : MonoBehaviour
         expSlider.value = value;
     }
 
-    public void levelUp(int EXP, int nextLvl) {
+    public void levelUp(int EXP, int nextLvl, int lvl) {
         value = EXP;
         min = max;
         max = nextLvl;
+        lvlTxt.GetComponent<Text>().text = "Level " + lvl;
 
         expSlider.maxValue = max;
         expSlider.minValue = min;

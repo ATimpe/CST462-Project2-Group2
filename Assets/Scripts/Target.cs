@@ -17,6 +17,10 @@ public class Target : MonoBehaviour
 
     void Die()
     {
+<<<<<<< Updated upstream
+=======
+        playerExp.addExp(50);
+>>>>>>> Stashed changes
         Destroy(gameObject);
     }
 
