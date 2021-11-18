@@ -29,6 +29,7 @@ public class Target : MonoBehaviour
     void Die()
     {
         playerExp.targetsDestroyed++;
+        playerExp.addExp(50);
         Destroy(gameObject);
     }
 

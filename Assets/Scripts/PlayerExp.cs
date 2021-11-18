@@ -24,10 +24,6 @@ public class PlayerExp : MonoBehaviour
         if (exp >= expNextLVL) {
             levelUp();
         }
-
-        if (Input.GetKeyDown("space")) {
-            addExp(5);
-        }
     }
 
     public void addExp(int expInc) {
@@ -39,10 +35,10 @@ public class PlayerExp : MonoBehaviour
         //playerHP += HPInt;
         level++;
         calcEXPNextLVL();
-        expBar.GetComponent<ExpBar>().levelUp(exp, expNextLVL);
+        expBar.GetComponent<ExpBar>().levelUp(exp, expNextLVL, level);
     }
 
     public void calcEXPNextLVL() {
-        expNextLVL = (int)(5000 * (Mathf.Pow(1.11f, level) - 1)) / 11;
+        expNextLVL = 50 * (int)Mathf.Pow(level, 2);
     }
 }
