@@ -14,12 +14,5 @@ public class DealDamage : MonoBehaviour
 		playerStats.TakeDamage(1);
 	}
 
-    public void OnTriggerEnter(Collider other)
-    {
-        if (other.tag == "Player")
-        {
-            triggeringEnemy = other.gameObject;
-            triggeringEnemy.GetComponent<Enemy>().health -= damage;
-        }
-    }
+  
 }
