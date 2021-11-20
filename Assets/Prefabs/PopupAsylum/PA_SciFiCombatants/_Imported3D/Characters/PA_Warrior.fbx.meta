@@ -246,7 +246,8 @@ ModelImporter:
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
-    rigImportErrors: 
+    rigImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tRequired
+      human bone 'LeftUpperLeg' not found\n"
     rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
@@ -598,7 +599,167 @@ ModelImporter:
   humanDescription:
     serializedVersion: 3
     human: []
-    skeleton: []
+    skeleton:
+    - name: PA_Warrior(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PA_WarriorControl
+      parentName: PA_Warrior(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.01, y: 0.01, z: 0.01}
+    - name: PA_WarriorRoot
+      parentName: PA_WarriorControl
+      position: {x: -6.31705e-30, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PA_WarriorBody
+      parentName: PA_WarriorRoot
+      position: {x: -21, y: 4.6629367e-15, z: 0}
+      rotation: {x: 0.53593165, y: -0.27364898, z: -0.22338104, w: 0.766808}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PA_WarriorTail1
+      parentName: PA_WarriorBody
+      position: {x: -19.209373, y: 3.5527137e-15, z: -1.5982008e-15}
+      rotation: {x: 0.12596826, y: -0.33198527, z: -0.0065882495, w: 0.9348125}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PA_WarriorTail2
+      parentName: PA_WarriorTail1
+      position: {x: -14.035668, y: -5.107026e-15, z: 7.140214e-15}
+      rotation: {x: 0.0133809, y: -0.092128634, z: -0.06822709, w: 0.9933169}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PA_WarriorTail3
+      parentName: PA_WarriorTail2
+      position: {x: -10.770329, y: -8.881784e-15, z: 7.424895e-15}
+      rotation: {x: 0, y: 0, z: 0.008491619, w: 0.99996394}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PA_WarriorTail4
+      parentName: PA_WarriorTail3
+      position: {x: -9.848858, y: -1.9095836e-14, z: 6.9654175e-15}
+      rotation: {x: 0, y: 0, z: 0.11326163, w: 0.9935652}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PA_WarriorTail5
+      parentName: PA_WarriorTail4
+      position: {x: -17.804493, y: -1.2434498e-14, z: 1.4215515e-14}
+      rotation: {x: 0.23112857, y: 0.6682661, z: -0.23112857, w: 0.6682661}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PA_WarriorWeapon1
+      parentName: PA_WarriorBody
+      position: {x: 2.8111277, y: 12.493901, z: -1.0255016e-14}
+      rotation: {x: -0.21323131, y: 0.9770017, z: -2.7676206e-16, w: 6.0403514e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PA_WarriorWeapon2
+      parentName: PA_WarriorWeapon1
+      position: {x: -12.369317, y: -2.220446e-15, z: 6.86635e-15}
+      rotation: {x: -0.08639661, y: -0.7018088, z: -0.08639661, w: 0.7018088}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PA_WarriorLtFrontLeg1
+      parentName: PA_WarriorBody
+      position: {x: 2.9163523, y: 2.3330817, z: 2}
+      rotation: {x: 0.12017584, y: 0.7956614, z: 0.46029025, w: 0.37498486}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PA_WarriorLtFrontLeg2
+      parentName: PA_WarriorLtFrontLeg1
+      position: {x: -6, y: -1.3322676e-15, z: 0}
+      rotation: {x: -0.0026804719, y: -0.016346507, z: 0.45030746, w: -0.89271986}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PA_WarriorLtFrontLeg3
+      parentName: PA_WarriorLtFrontLeg2
+      position: {x: -19.849434, y: -1.7763568e-15, z: 0}
+      rotation: {x: 0, y: 0, z: 0.6606827, w: 0.7506653}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swarmWarriorLtFrontLeg4
+      parentName: PA_WarriorLtFrontLeg3
+      position: {x: -15.556349, y: 1.0658141e-14, z: 0}
+      rotation: {x: -0.0005203895, y: 0.001703035, z: -0.38781127, w: 0.9217371}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swarmWarriorLtFrontLeg5
+      parentName: swarmWarriorLtFrontLeg4
+      position: {x: -18.110771, y: 1.3322676e-15, z: 0}
+      rotation: {x: 0, y: -0, z: -0.66692144, w: 0.74512804}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PA_WarriorLtRearLeg1
+      parentName: PA_WarriorBody
+      position: {x: -1.4498698, y: -1.1598958, z: 2}
+      rotation: {x: 0.26933414, y: 0.5603833, z: 0.70591646, w: 0.339281}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PA_WarriorLtRearLeg2
+      parentName: PA_WarriorLtRearLeg1
+      position: {x: -6, y: -1.3322676e-15, z: 0}
+      rotation: {x: 0.0016601386, y: -0.02747463, z: 0.91021144, w: -0.41322815}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swarmWarriorLtRearLeg3
+      parentName: PA_WarriorLtRearLeg2
+      position: {x: -19.849434, y: -1.7763568e-15, z: 0}
+      rotation: {x: 0, y: 0, z: 0.640399, w: 0.76804245}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swarmWarriorLtRearLeg4
+      parentName: swarmWarriorLtRearLeg3
+      position: {x: -15.556349, y: 1.0658141e-14, z: 0}
+      rotation: {x: 0, y: 0, z: 0.28171685, w: 0.95949763}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swarmWarriorLtRearLeg5
+      parentName: swarmWarriorLtRearLeg4
+      position: {x: -18.110771, y: 1.3322676e-15, z: 0}
+      rotation: {x: 0, y: -0, z: -0.66692144, w: 0.74512804}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PA_WarriorRtRearLeg1
+      parentName: PA_WarriorBody
+      position: {x: -1.4498703, y: -1.1598963, z: -2}
+      rotation: {x: 0.5419108, y: -0.2604558, z: -0.3461434, w: 0.7201946}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PA_WarriorRtRearLeg2
+      parentName: PA_WarriorRtRearLeg1
+      position: {x: 6, y: 3.5527137e-15, z: -8.881784e-16}
+      rotation: {x: -0.0039776345, y: 0.15208432, z: 0.87790596, w: -0.45402175}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swarmWarriorRtRearLeg3
+      parentName: PA_WarriorRtRearLeg2
+      position: {x: 19.849405, y: -0.000031609237, z: 0.000010206224}
+      rotation: {x: 0.00000007999462, y: -0.00000008525232, z: 0.5577599, w: 0.8300024}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swarmWarriorRtRearLeg4
+      parentName: swarmWarriorRtRearLeg3
+      position: {x: 15.556351, y: -0.000001406821, z: -0.0000005391956}
+      rotation: {x: -0.00000003588196, y: -0.00000012503745, z: 0.24073568, w: 0.9705907}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swarmWarriorRtRearLeg5
+      parentName: swarmWarriorRtRearLeg4
+      position: {x: 18.110777, y: -0.000051949653, z: -0.00001695367}
+      rotation: {x: 0.000000005551638, y: -0.000000022181908, z: -0.66692144, w: 0.74512804}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PA_WarriorRtFrontLeg1
+      parentName: PA_WarriorBody
+      position: {x: 2.91635, y: 2.3330798, z: -2}
+      rotation: {x: 0.70660406, y: -0.33961147, z: -0.26891732, w: 0.5595161}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PA_WarriorRtFrontLeg2
+      parentName: PA_WarriorRtFrontLeg1
+      position: {x: 6, y: 3.5527137e-15, z: -2.220446e-15}
+      rotation: {x: -0.064788565, y: 0.17613725, z: -0.8405779, w: 0.5081406}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swarmWarriorRtFrontLeg3
+      parentName: PA_WarriorRtFrontLeg2
+      position: {x: 19.84945, y: 0.00001755835, z: 0.0000010906459}
+      rotation: {x: -0.000000051125255, y: -0.00000006434788, z: 0.5325773, w: 0.84638137}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swarmWarriorRtFrontLeg4
+      parentName: swarmWarriorRtFrontLeg3
+      position: {x: 15.556319, y: 0.000029825098, z: -0.000004948679}
+      rotation: {x: 0.000000031162863, y: 0.00000019108425, z: 0.228737, w: 0.9734883}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swarmWarriorRtFrontLeg5
+      parentName: swarmWarriorRtFrontLeg4
+      position: {x: 18.110777, y: -0.00006273537, z: 0.000015773}
+      rotation: {x: 0, y: -0, z: -0.66692144, w: 0.74512804}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PA_Warrior
+      parentName: PA_Warrior(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
