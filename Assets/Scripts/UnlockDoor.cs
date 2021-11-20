@@ -13,7 +13,8 @@ public class UnlockDoor : Target
             // this object was clicked - do something
             if (numDestroyed >= 1)
             {
-            SceneManager.LoadScene("level_2");
+
+                SceneManager.LoadScene("level_2");
             }
 
         }

@@ -31,7 +31,7 @@ public class ExpBar : MonoBehaviour
 
     public void levelUp(int EXP, int nextLvl, int lvl) {
         value = EXP;
-        min = max;
+        min = 50 * (int)Mathf.Pow(lvl - 1, 2);
         max = nextLvl;
         lvlTxt.GetComponent<Text>().text = "Level " + lvl;
 
