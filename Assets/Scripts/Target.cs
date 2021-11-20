@@ -7,7 +7,7 @@ public class Target : MonoBehaviour
     public float health = 50f;
 
     public GameObject player;
-    public PlayerExp playerExp;
+    private PlayerExp playerExp;
 
     public int numDestroyed;
 
@@ -28,6 +28,7 @@ public class Target : MonoBehaviour
 
     void Die()
     {
+        playerExp.targetsDestroyed++;
         playerExp.addExp(50);
         Destroy(gameObject);
     }

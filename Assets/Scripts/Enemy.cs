@@ -7,7 +7,7 @@ public class Enemy : MonoBehaviour
 {
     public NavMeshAgent agent;
     public Transform player;
-    public LayerMask whatGround, whatPlayer;
+    public LayerMask whatIsGround, whatIsPlayer;
     public float health;
 
     //Patroling
@@ -34,8 +34,8 @@ public class Enemy : MonoBehaviour
     private void Update()
     {
         // Check sight and attack range
-        playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatPlayer);
-        playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatPlayer);
+        playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
+        playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
 
         // Not in sight or attack range
         if (!playerInSightRange && !playerInAttackRange) patroling();
@@ -45,6 +45,8 @@ public class Enemy : MonoBehaviour
 
         // Player in sight range and attack range
         if (playerInSightRange && playerInAttackRange) attackingPlayer();
+
+       
     }
 
 
@@ -78,7 +80,7 @@ public class Enemy : MonoBehaviour
         walkpoint = new Vector3(transform.position.x + randomX, transform.position.y, transform.position.z + randomZ);
 
         // Check to make sure its inside the map and on the ground
-        if (Physics.Raycast(walkpoint, -transform.up, 2f, whatGround))
+        if (Physics.Raycast(walkpoint, -transform.up, 2f, whatIsGround))
         {
             walkPointSet = true;
         }
@@ -100,8 +102,8 @@ public class Enemy : MonoBehaviour
         {
             //Attack code
             Rigidbody rb = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
-            rb.AddForce(transform.forward * 32f, ForceMode.Impulse);
-            rb.AddForce(transform.up * 8f, ForceMode.Impulse);
+            rb.AddForce(transform.forward * 35f, ForceMode.Impulse);
+            rb.AddForce(transform.up * 5f, ForceMode.Impulse);
 
             alreadyAttacked = true;
             Invoke(nameof(resetAttack), timeBetweenAttacks);
@@ -119,6 +121,7 @@ public class Enemy : MonoBehaviour
 
         if (health <= 0) Invoke(nameof(DestroyEnemy), .5f);
     }
+
 
     private void DestroyEnemy()
     {

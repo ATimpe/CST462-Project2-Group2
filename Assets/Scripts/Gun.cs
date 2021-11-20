@@ -29,22 +29,25 @@ public class Gun : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ammoDisplay.text = $"Ammo: {currentAmmo.ToString()}";
-        if (isReloading)
+        if (!PauseMenu.Paused)
         {
-            return;
-        }
+            ammoDisplay.text = $"Ammo: {currentAmmo.ToString()}";
+            if (isReloading)
+            {
+                return;
+            }
 
-        if (currentAmmo <= 0)
-        {
-            StartCoroutine(Reload());
-            return;
-        }
+            if (currentAmmo <= 0)
+            {
+                StartCoroutine(Reload());
+                return;
+            }
 
-        if (Input.GetButton("Fire1") && Time.time >= nextTimeToFire)
-        {
-            nextTimeToFire = Time.time + 1f / fireRate;
-            Shoot();
+            if (Input.GetButton("Fire1") && Time.time >= nextTimeToFire)
+            {
+                nextTimeToFire = Time.time + 1f / fireRate;
+                Shoot();
+            }
         }
     }
 
