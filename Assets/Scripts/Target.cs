@@ -7,7 +7,7 @@ public class Target : MonoBehaviour
     public float health = 50f;
 
     public GameObject player;
-    public PlayerExp playerExp;
+    private PlayerExp playerExp;
 
     public int numDestroyed;
 

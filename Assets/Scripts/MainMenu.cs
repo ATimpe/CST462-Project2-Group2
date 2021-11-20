@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    public GameObject mainMenuUI;
+    public GameObject howToPlayUI;
+
     public void StartGame()
     {
         SceneManager.LoadScene("level_1");
@@ -17,14 +20,20 @@ public class MainMenu : MonoBehaviour
         //Application.Quit();
     }
 
-    public void Howtoplay()
+    public void HowToPlay()
     {
-        SceneManager.LoadScene("Game Instructions");
+        //SceneManager.LoadScene("Game Instructions");
+
+        howToPlayUI.SetActive(true);
+        mainMenuUI.SetActive(false);
     }
 
     public void ReturnMenu()
     {
         //returns to main menu
-        SceneManager.LoadScene("MainMenu");
+        //SceneManager.LoadScene("MainMenu");
+
+        howToPlayUI.SetActive(false);
+        mainMenuUI.SetActive(true);
     }
 }
