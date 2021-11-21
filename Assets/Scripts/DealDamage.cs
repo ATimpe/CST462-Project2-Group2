@@ -14,5 +14,6 @@ public class DealDamage : MonoBehaviour
 		playerStats.TakeDamage(1);
 	}
 
-  
+
+
 }
