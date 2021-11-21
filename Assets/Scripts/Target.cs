@@ -13,6 +13,7 @@ public class Target : MonoBehaviour
 
     private void Start()
     {
+        player = GameObject.FindGameObjectsWithTag("Player")[0];
         playerExp = player.GetComponent<PlayerExp>();
     }
 
@@ -29,7 +30,7 @@ public class Target : MonoBehaviour
     void Die()
     {
         playerExp.targetsDestroyed++;
-        playerExp.addExp(50);
+        playerExp.addExp(70);
         Destroy(gameObject);
     }
 

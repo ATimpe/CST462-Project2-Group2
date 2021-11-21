@@ -18,6 +18,8 @@ public class LoadNextLevel : MonoBehaviour
     {
         if (collision.gameObject.tag.Equals("Player") && lightController.nextLevelUnlocked)
         {
+            GameObject.FindGameObjectsWithTag("VariableHolder")[0].GetComponent<VariableHolder>().level = GameObject.FindGameObjectsWithTag("Player")[0].GetComponent<PlayerExp>().level;
+            GameObject.FindGameObjectsWithTag("VariableHolder")[0].GetComponent<VariableHolder>().exp = GameObject.FindGameObjectsWithTag("Player")[0].GetComponent<PlayerExp>().exp;
             SceneManager.LoadScene("level_2");
         }
     }
