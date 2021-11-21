@@ -21,9 +21,12 @@ public class Gun : MonoBehaviour
 
     private float nextTimeToFire = 0f;
 
+    AudioSource shootingSound;
+
     void Start()
     {
         currentAmmo = maxAmmo;
+        shootingSound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -45,6 +48,8 @@ public class Gun : MonoBehaviour
 
             if (Input.GetButton("Fire1") && Time.time >= nextTimeToFire)
             {
+                
+                shootingSound.Play();
                 nextTimeToFire = Time.time + 1f / fireRate;
                 Shoot();
             }
